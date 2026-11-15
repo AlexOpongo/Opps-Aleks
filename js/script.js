@@ -17,7 +17,7 @@ function searchStudents() {
         let row = rows[i].textContent.toLowerCase();
 
         // Check if the row contains the search value
-        if (rowt.includes(filter)) {
+        if (row.includes(filter)) {
             rows[i].style.display = "";
         } else {
             rows[i].style.display = "none";
