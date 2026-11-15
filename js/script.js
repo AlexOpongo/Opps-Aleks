@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
         let name = document.getElementById("studentName").value;
         let reg = document.getElementById("registrationNumber").value;
         let id =  document.getElementById("studentId").value;
-        let studentClass =  document.getElementById("studentClass").value;
+        let studentClass =  document.getElementById("className").value;
         let gender =  document.getElementById("gender").value;
-        let phone =  document.getElementById("parentPhone").value;
+        let phone =  document.getElementById("phone").value;
 
         let tbody =  document.getElementById("studentList");
         let tr =  document.createElement("tr");
