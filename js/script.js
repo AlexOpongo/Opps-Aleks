@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
 
         let name = document.getElementById("studentName").value;
-        let reg = document.getElementById("regNumber").value;
+        let reg = document.getElementById("registrationNumber").value;
         let id =  document.getElementById("studentId").value;
         let studentClass =  document.getElementById("studentClass").value;
         let gender =  document.getElementById("gender").value;
