@@ -111,12 +111,12 @@ button:hover{
 
 input{
     width: 20%;
-    padding: 5px;
+    padding: 11px;
     box-sizing: border-box;
     border-radius: 10px;
-    border: none;
-    background-color: #1d0574;
-    color: white;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #222;
 }
 
 select{
