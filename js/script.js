@@ -17,10 +17,38 @@ function searchStudents() {
         let row = rows[i].textContent.toLowerCase();
 
         // Check if the row contains the search value
-        if (rowtext.includes(filter)) {
+        if (rowt.includes(filter)) {
             rows[i].style.display = "";
         } else {
             rows[i].style.display = "none";
         }
     }
 }
+
+// REGISTER STUDENT
+document.addEventListener("DOMContentLoaded", function() {
+    let form = document.getElementById("studentForm");
+    if (!form) return;
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let name = document.getElementById("studentName").value;
+        let reg = document.getElementById("regNumber").value;
+        let id =  document.getElementById("studentId").value;
+        let studentClass =  document.getElementById("studentClass").value;
+        let gender =  document.getElementById("gender").value;
+        let phone =  document.getElementById("parentPhone").value;
+
+        let tbody =  document.getElementById("studentList");
+        let tr =  document.createElement("tr");
+        tr.innerHTML = "<td>" + id + "</td><td>" + reg + "</td><td>" + name + "</td><td>" + studentClass + "</td><td>" + gender + "</td><td>" + phone + "</td><td><button onclick='this.parentElement.parentElement.remove()'>Delete</button></td>";
+        tbody.appendChild(tr);
+
+        form.requestFullscreen();
+        alert("Student Registered Successfully!");
+    });
+    });
+)
+}
+)
