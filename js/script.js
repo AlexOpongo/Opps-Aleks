@@ -64,6 +64,8 @@ document.addEventListener("DOMContentLoaded", function() {
         form.reset();
         alert("Teacher Registered Successfully!");
     });
-}
+});
+
+
 
 
