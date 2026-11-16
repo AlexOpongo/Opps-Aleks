@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // REGISTER TEACHER
     document.addEventListener("DOMContentLoaded", function() {
-    let form = document.getElementById("teacherForm");
+    let form = document.getElementById("teachersForm");
     if (!form) return;
 
     form.addEventListener("submit", function(e) {
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let subject = document.getElementById("teacherSubject").value;
         let gender = document.getElementById("teacherGender").value;
 
-        let tbody = document.querySelector("#teacherTable tbody");
+        let tbody = document.querySelector("#teachersTable tbody");
         let tr = document.createElement("tr");
         tr.innerHTML = "<td>" + id + "</td><td>" + name + "</td><td>" + phone + "</td><td>" + subject + "</td><td>" + gender + "</td><td><button onclick='this.parentElement.parentElement.remove()'>Delete</button></td>";
         tbody.appendChild(tr);
