@@ -1,29 +1,20 @@
-function searchStudents() {
-    // Get the input 
-    let input = document.getElementById("searchStudents");
+// SEARCH STUDENT
+function searchStudent() {
+    let filter = document.getElementById("searchInputs").value.toLowerCase();
+    let table = document.getElementById("studentTable");
+    let tr = table.getElementsByTagName("tr");
 
-    // Get the search value
-    let filter = input.value.toLowerCase();
-
-    // Get the student table 
-    let the table = document.getElementById("studentTable");
-
-    // get all table rows
-    let rows = table.getElementsByTagName("tr");
-
-    // Loop throough the rows
-    for (let i = 1; i < rows.length; i++) {
-
-        let row = rows[i].textContent.toLowerCase();
-
-        // Check if the row contains the search value
-        if (row.includes(filter)) {
-            rows[i].style.display = "";
+    for (let i = 1; i < tr.length; i++) {
+        let rows = tr[i].textContent.toLowerCase();
+        if (rows.includes(filter)) {
+            tr[i].style.display = "";
         } else {
-            rows[i].style.display = "none";
+            tr[i].style.display = "none";
         }
     }
 }
+
+
 
 // REGISTER STUDENT
 document.addEventListener("DOMContentLoaded", function() {
