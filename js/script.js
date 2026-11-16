@@ -67,5 +67,26 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// REGISTER SUBJECT
+document.addEventListener("DOMContentLoaded", function() {
+    let form = document.getElementById("subjectForm");
+    if (!form) return;
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let name = document.getElementById("subjectName").value;
+        let code = document.getElementById("subjectCode").value;
+
+        let tbody = document.querySelector("#subjectTable tbody");
+        let tr = document.createElement("tr");
+        tr.innerHTML = "<td>" + name + "</td><td>" + code + "</td><td><button onclick='this.parentElement.parentElement.remove()'>Delete</button></td>";
+        tbody.appendChild(tr);
+
+        form.reset();
+        alert("Subject Registered Successfully!");
+    });
+});
+
 
 
