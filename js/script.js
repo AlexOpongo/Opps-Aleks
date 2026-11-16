@@ -88,5 +88,26 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// REGISTER RESULTS
+document.addEventListener("DOMContentLoaded", function() {
+    let form = document.getElementById("resultsForm");
+    if (!form) return;
 
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let studentId = document.getElementById("studentName").value;
+        let subject = document.getElementById("subject").value;
+        let marks = document.getElementById("marks").value;
+        let grade = document.getElementById("grade").value;
+
+        let tbody = document.querySelector("#resultsTable tbody");
+        let tr = document.createElement("tr");
+        tr.innerHTML = "<td>" + studentId + "</td><td>" + subject + "</td><td>" + marks + "</td><td>" + grade + "</td><td><button onclick='this.parentElement.parentElement.remove()'>Delete</button></td>";
+        tbody.appendChild(tr);
+
+        form.reset();
+        alert("Result Registered Successfully!");
+    });
+});
 
