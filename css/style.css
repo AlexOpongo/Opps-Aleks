@@ -197,6 +197,22 @@ table button{
     padding: 20px;
 }
 
+.card:nth-child(1),
+.stat:nth-child(1) { border-bottom: 6px solid #3498db; }
+.card:nth-child(2),
+.stat:nth-child(2) { border-bottom: 6px solid #27ae60; }
+.card:nth-child(3),
+.stat:nth-child(3) { border-bottom: 6px solid #f39c12; }
+.card:nth-child(4),
+.stat:nth-child(4) { border-bottom: 6px solid #8e44ad; }
 
+.card h3,
+.stat h3,
+.card h2,
+.stat h2 {
+    margin: 0 0 10px 0;
+    color: #2e86c1 !important;
+    font-size: 18px;
+}
 
 
