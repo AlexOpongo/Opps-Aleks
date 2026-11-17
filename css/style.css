@@ -141,11 +141,14 @@ th{
     color: white;
     padding: 12px;
     text-align: left;
+    vertical-align: middle;
 }
 
 td{
     padding: 12px;
     border-bottom: 1px solid #ddd;
+    min-width: 90px;
+    white-space: nowrap;
 }
 
 tr:hover{
@@ -159,6 +162,10 @@ table button{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    min-width: 70px;
+    cursor: pointer;
+    font-size: 14px;
+    
 }
 
 #searchStudents{
