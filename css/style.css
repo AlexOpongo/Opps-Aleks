@@ -248,4 +248,15 @@ header p{
     transition: transform 0.2s ease-in-out;
 }
 
+a.card {
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+a.card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+    cursor: pointer;
+}
+
 
